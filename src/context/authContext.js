@@ -24,7 +24,7 @@ export function AuthProvider({children}){
     const logout = () => signOut(auth);
 
     const loginWithGoogle = () =>{
-        const googleProvider = new GoogleAuthProvider; 
+        const googleProvider = new GoogleAuthProvider(); 
         return signInWithPopup(auth, googleProvider);
     }
 

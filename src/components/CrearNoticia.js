@@ -1,16 +1,15 @@
 import db, { storage } from "../firebase";
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useAuth } from "../context/authContext";
 import './CrearNoticia.css';
-import { async } from "@firebase/util";
 import { addDoc, collection } from "firebase/firestore";
 
 
 export default function CrearNoticia() {
   
-  const {user, logout, loading} = useAuth();
+  const {user, loading} = useAuth();
   let {id}=useParams();
   const [progress, setProgress]= useState(0);
 

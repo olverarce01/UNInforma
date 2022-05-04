@@ -1,9 +1,6 @@
-import React, {useContext, useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import {doc, getDoc} from "firebase/firestore";
-import db from '../firebase';
+import React, {useState } from 'react';
+import { Link, useNavigate} from 'react-router-dom';
 import { useAuth } from '../context/authContext';
-import { async } from '@firebase/util';
 import { Alert } from './Alert';
 
 

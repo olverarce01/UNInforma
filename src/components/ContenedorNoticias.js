@@ -26,7 +26,7 @@ export default function ContenedorNoticias() {
   var url="/noticias/";
   var slash="/";
 
-  const {user, logout, loading} = useAuth();
+  const {loading} = useAuth();
 
 useEffect(() => {
   consulta(id,noticias,setNoticias);

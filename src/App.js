@@ -4,13 +4,12 @@ import Poligonos from './poligonos.json';
 import ReactDOM from 'react-dom';
 
 
-import { Outlet, Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
-import {collection, getDocs} from 'firebase/firestore';
-import db from './firebase'
 import { useAuth } from './context/authContext';
 import { Mark } from './components/Mark';
 
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default; // eslint-disable-line
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoib2x2ZXJhcmNlMDEiLCJhIjoiY2wyZGZrbHhvMHluYjNsbGhvZzBib3o1MCJ9.IePyh9Zgtj8wkqHJPG95Dg';
 

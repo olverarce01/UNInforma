@@ -30,7 +30,7 @@ export default function ContenedorNoticia() {
   const [poligono,setPoligono]=useState("");
   const [url,setUrl]=useState("");
   
-  const {user, logout, loading} = useAuth();
+  const {loading} = useAuth();
 
 
   let {id}=useParams();
