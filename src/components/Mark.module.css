@@ -1,0 +1,20 @@
+.mark{
+	background-color: lightgreen;
+	text-align: center;
+	border-radius: 5px;
+}
+.button{
+	background-color: black;
+	color: white;	
+	margin: 5px;
+	border-radius: 5px;
+	padding: 10px 10px;
+	font-size: 20px;
+	display: inline-flex;
+}
+.parrafo{
+	background-color: lightblue;
+	font-weight: bold;
+	font-size: 30px;
+	border-radius: 5px 5px 0 0;
+}

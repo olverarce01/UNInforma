@@ -1,0 +1,10 @@
+.img{
+	border-radius: 10px;
+	background-color: white;
+	width: 150px;
+	display: block;
+	margin: 20px auto;
+}
+.container{
+	background-color: lightcoral;
+}
