@@ -1,5 +1,5 @@
 .mark{
-	background-color: lightgreen;
+	background-color: white;
 	text-align: center;
 	border-radius: 5px;
 }
@@ -9,11 +9,16 @@
 	margin: 5px;
 	border-radius: 5px;
 	padding: 10px 10px;
-	font-size: 20px;
+	font-size: 22px;
 	display: inline-flex;
+	transition: 0.5s all;
+}
+.button:hover{
+	background-color: gray;
 }
 .parrafo{
-	background-color: lightblue;
+	background-color: black;
+	color: white;
 	font-weight: bold;
 	font-size: 30px;
 	border-radius: 5px 5px 0 0;

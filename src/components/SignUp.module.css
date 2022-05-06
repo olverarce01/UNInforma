@@ -1,0 +1,31 @@
+.containerForm{
+	background-color: black;
+	color: white;
+	padding: 60px;
+	margin: 20px;
+}
+.formItem{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	font-size: 30px;
+
+}
+.button{
+	background-color: white;
+	margin: 20px 20px 20px 0;
+	color: black;
+	font-size: 25px;
+	transition: 0.5s all;
+	padding: 5px;
+	border-radius: 10px;
+	border: none;
+}
+.button:hover{
+	background-color: gray;
+	color: white;
+}
+.titulo{
+	text-align: center;
+	margin-bottom: 20px;
+}

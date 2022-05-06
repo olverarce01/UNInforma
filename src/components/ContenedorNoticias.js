@@ -3,8 +3,7 @@ import { useParams } from 'react-router-dom';
 import { collection, query, where, getDocs } from "firebase/firestore";
 import db from '../firebase';
 import { useAuth } from '../context/authContext';
-
-
+import styles from "./ContenedorNoticias.module.css";
 async function consulta(id,noticias,setNoticias){
 
 
@@ -34,21 +33,21 @@ useEffect(() => {
 });
 
 
-if(loading) return <h1>cargando</h1>
+if(loading) return <div className="containerLoading"><img src="../loading.gif" width="600px"/></div>
 
 
   return (
-    <div id="containerNoticias">
-      <header className="headerNoticias">
+    <div>
+      <header className={styles.headerNoticias}>
         Noticias {id}
       </header>
       {
       noticias.map((noticia) => (
         <a href={url+id+slash+noticia.id} key={noticia.id}>
-          <div className="col-md-4 noticia" key={noticia.id} id={noticia.id}>
-          <div className="noticia_titulo">{noticia.data().titulo}</div>
-          <div className="noticia_contenido">{noticia.data().descripcion}</div>
-          <div className="noticia_tipo">{noticia.data().tipo}</div>
+          <div className={styles.noticia} key={noticia.id} id={noticia.id}>
+          <div className={styles.noticia_titulo}>{noticia.data().titulo}</div>
+          <div className={styles.noticia_contenido}>{noticia.data().descripcion}</div>
+          <div className={styles.noticia_tipo}>{noticia.data().tipo}</div>
         </div>
         </a>
       ))

@@ -3,6 +3,7 @@ import { useNavigate} from 'react-router-dom';
 import { useAuth } from '../context/authContext';
 import { Alert } from './Alert';
 
+import styles from "./SignUp.module.css";
 
 export default function SignUp() {
   const {signup} = useAuth();
@@ -39,19 +40,24 @@ const handleSubmit = async (e) => {
 };
  
   return (
-    <div>
+    <div className={styles.containerForm}>
       {error && <Alert message={error}/>}
+      <h1 className={styles.titulo}>SignUp</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor='email'>Email</label>
-        <input type='email' name='email' placeholder='youremail@company.ltd'
-        onChange={handleChange}
+        <div className={styles.formItem}>
+          <label htmlFor='email'>Email</label>
+          <input type='email' name='email' placeholder='youremail@company.ltd'
+          onChange={handleChange}
         />
+        </div>
 
-        <label htmlFor='password'>Password</label>
-        <input type='password' name='password' id='password'
-        onChange={handleChange}
-        />
-        <button>Register</button>
+        <div className={styles.formItem}>
+          <label htmlFor='password'>Password</label>
+          <input type='password' name='password' id='password'
+          onChange={handleChange}
+          />
+        </div>
+        <button className={styles.button}>Register</button>
       </form>
   </div>
   );

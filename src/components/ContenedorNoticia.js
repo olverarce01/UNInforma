@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import {doc, getDoc} from "firebase/firestore";
 import db from '../firebase';
 import { useAuth } from '../context/authContext';
-import styles from './imageNoticia.module.css';
+import styles from './ContenedorNoticia.module.css';
 
 async function consulta(id2,setDescripcion,setTipo,setTitulo,setUrl,setPoligono){
 
@@ -41,14 +41,16 @@ useEffect(() => {
   consulta(id2,setDescripcion,setTipo,setTitulo,setUrl,setPoligono);
 });
 
-  if(loading) return <h1>cargando</h1>
+  if(loading) return <div className="containerLoading"><img src="../loading.gif" width="600px"/></div>
 
 
   return (
-    <div className={"col-md-4 noticia"} key={id2}>
-    <div className="noticia_titulo">{titulo}</div>
-    <div className="noticia_contenido">{descripcion}</div>
-    <div className="noticia_tipo">{tipo}</div>
+    <div className={styles.noticia} key={id2}>
+
+    
+    <div className={styles.titulo}>{titulo}</div>
+    <div className={styles.contenido}>{descripcion}</div>
+    <div className={styles.tipo}>{tipo}</div>
     <img src={url} alt="imagenNoticia" className={styles.img}/>
 
 

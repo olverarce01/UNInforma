@@ -51,7 +51,7 @@
 [-70.29539025598193,-18.489372918769813],
 [-70.29527626210455,-18.489040957765102]
 ]],
-  "colorRelleno": "#e7f7f6",
+  "colorRelleno": "#aaa7f6",
   "colorBorde":"#000",
   "contenidoHtml":"Departamento Informatica"
 },
@@ -118,7 +118,7 @@
 [-70.29728340509097,-18.490598068591236],
 [-70.29694276455137,-18.490096950717938]
 ]],
-  "colorRelleno": "#9ED597",
+  "colorRelleno": "#66ee66",
   "colorBorde":"#000",
   "contenidoHtml":"Edificio Integral"
 }

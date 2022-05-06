@@ -1,5 +1,8 @@
+import styles from "./Alert.module.css";
+
+
 export function Alert({message}){
     return <div>
-        <span>{message}</span>
+        <span className={styles.alert}>{message}</span>
     </div>;
 }

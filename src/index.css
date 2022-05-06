@@ -17,116 +17,23 @@ code {
     monospace;
 }
 
-.map-container {
-  height: 100vh;
-  position: relative;
-}
-
-.mapboxgl-canvas{
-  height: 100vh;
-  position: absolute;
-
-}
-.sidebar {
-  background-color: lightblue;
-  color: #000;
-  padding: 10px;
-  font-family: monospace;
-  z-index: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin: 12px;
-  border-radius: 4px;
-}
-
-
-.contactos{
-  background-color: lightgreen;
-  color: #000;
-  padding: 10px;
-  font-family: monospace;
-  font-size: 15px;
-  z-index: 1;
-  position: relative;
-  text-decoration: none;
-  top: 0;
-  left: 0;
-  margin: 12px;
-  border-radius: 4px;
-}
-
-nav{
-  background-color: black;
-  color: #fff;
-  padding: 10px;
-  font-family: monospace;
-  z-index: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  border-radius: 4px;
-
-
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-.btnNoticias{
-  background-color: white;
-  font-size: 20px;
-  border-radius: 10px;
+.mapboxgl-popup-close-button{
+  background-color: red;
+  color: white;
+  font-size: 30px;
   border: none;
+  padding: 0 10px;
+  margin: 5px;
+  border-radius: 10px;
 }
-.btnNoticias:hover{
+.containerLoading{
   background-color: black;
-  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.noticia{
-width: 100hv;
-background-color: lightsalmon;
-padding: 40px;
-margin: 40px;
-border: 2px solid black;
-}
-
-.noticia:hover{
-  background-color: lightcoral;
-  cursor: pointer;
-}
-.headerNoticias{
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 30px;
-}
-
-.noticia_titulo{
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  
-}
-.noticia_contenido{
-  background-color: rgb(238, 181, 158);
-  padding: 20px;
-  margin: 20px;
-}
-.noticia_tipo{
-  background-color: cadetblue;
+.loading{
+  font-weight: bold;
   display: inline;
-  font-size: 25px;
-  border-radius: 20px;
-  color: white;
-  padding: 10px;
-  margin: 20px;
-}
-
-div a{
-  text-decoration:none;
-  color: black;
 }

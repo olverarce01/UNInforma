@@ -3,7 +3,8 @@ import React, {useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useAuth } from "../context/authContext";
-import './CrearNoticia.css';
+import styles from "./CrearNoticia.module.css";
+
 import { addDoc, collection } from "firebase/firestore";
 
 
@@ -57,39 +58,41 @@ export default function CrearNoticia() {
   };
 
 
-  if(loading) return <h1>cargando</h1>
+  if(loading) return <div className="containerLoading"><img src="../loading.gif" width="600px"/></div>
 
   return (
-    <div className="containerCrearNoticia">
-      <h1>Crea una noticia</h1>
-      <form onSubmit={formHandler} id="formulario">
-          <div className="divForm">
-            Autor: <a>{user.displayName || user.email}</a>
+    <div className={styles.containerCrearNoticia}>
+      <h1 className={styles.titulo}>Crea una noticia</h1>
+      <form onSubmit={formHandler} className={styles.formulario}>
+          <div className={styles.divForm}>
+            Autor: <a className={styles.userDate}>{user.displayName || user.email}</a>
           </div>
-          <div className="divForm">
-            Sector: <a>{id}</a>
+          <div className={styles.divForm}>
+            Sector: <a className={styles.userDate}>{id}</a>
           </div>
-          <div className="divForm">
+          <div className={styles.divForm}>
             Titulo:
             <input type="titulo" name="titulo" placeholder="titulo" onChange={handleChange}/>
           </div>
-          <div className="divForm">
+          <div className={styles.divForm}>
             Descripcion:
             <input type="descripcion" name="descripcion" placeholder="descripcion" onChange={handleChange}/>
           </div>
-          <div className="divForm">
-            Añada un archivo:
-            <input type="file" className="input" id="inputFile"/>
+          <div className={styles.divForm}>
+            Añada una imagen:
+            <input type="file" className="input" id="inputFile" accept="image/png, image/gif, image/jpeg"/>
           </div>
-          <div className="divForm">
+          <div className={styles.divForm}>
             Seleccione el tipo de suceso:
-            <select name="tipo" id="tipo" onChange={handleChange} value={noticia.tipo}>
+            <select name="tipo" id="tipo" onChange={handleChange} value={noticia.tipo} className={styles.selection}>
               <option value="robo" selected="selected">Robo</option>
               <option value="asalto">Asalto</option>
             </select>
           </div>
-          <button type="submit">Subir</button>
-          <h3>Subido {progress} %</h3>          
+          <div className={styles.submit}>
+            <button type="submit" className={styles.button}>Subir</button>
+            <h3>Subido {progress} %</h3>   
+          </div>       
       </form>
 
   </div>

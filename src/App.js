@@ -2,6 +2,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import Poligonos from './poligonos.json';
 import ReactDOM from 'react-dom';
+import './App.css';
+import styles from "./App.module.css";
 
 
 import {useNavigate } from "react-router-dom";
@@ -53,7 +55,7 @@ function crearPoligono(mapa,nombre,coordenadas,colorRelleno,colorBorde,contenido
       });
       });
       const placeholder = document.createElement('div');
-      ReactDOM.render(<Mark nombre={Poligonos[i].nombre} contenidoHtml={Poligonos[i].contenidoHtml}/>,placeholder);
+      ReactDOM.render(<Mark nombre={Poligonos[i].nombre} contenidoHtml={Poligonos[i].contenidoHtml} colorRelleno={Poligonos[i].colorRelleno}/>,placeholder);
       
       mapa.on('click', nombre, (e) => {
       new mapboxgl.Popup()
@@ -83,8 +85,6 @@ export default function Inicio() {
   const [zoom, setZoom] = useState(17);
   const {user, logout, loading} = useAuth();
   const navigate = useNavigate();
-
-  console.log(user);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -120,25 +120,31 @@ export default function Inicio() {
       console.log(error);
     }
   }
-  if(loading) return <h1>cargando</h1>
+  if(loading) return <div className="containerLoading"><img src="../loading.gif" width="600px"/></div>
 
   return (
     <div>
-      <nav>
-      <h1>welcome {user.displayName || user.email}</h1>
-      <button onClick={handleLogout}>
-        logout
-      </button>
-      <div className="sidebar">
+      <nav className={styles.navMap}>
+      
+      <div className={styles.containerCount}>
+          <h1 className={styles.userName}>{user.displayName || user.email}</h1>
+          <button onClick={handleLogout} className={styles.button}>
+            logout
+          </button>
+      
+      </div>
+      <div className={styles.sidebar}>
         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       </div>
-      <a className="contactos" href="tel:*103#">
+      <div className={styles.divContancts}>
+        <a className={styles.contactos} href="tel:*103#">
             <img src="https://cdn-icons-png.flaticon.com/512/561/561253.png" alt="guardias colina" width="20px"/>
             Guardias Colina</a>
 
-      <a className="contactos" href="tel:*103#">
+        <a className={styles.contactos} href="tel:*103#">
             <img src="https://cdn-icons-png.flaticon.com/512/561/561253.png" alt="guardias 18septiembre" width="20px"/>
             Guardias 18septiembre</a>
+      </div>
      
 
       </nav>

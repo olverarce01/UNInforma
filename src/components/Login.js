@@ -2,6 +2,7 @@ import React, {useState } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
 import { useAuth } from '../context/authContext';
 import { Alert } from './Alert';
+import styles from "./Login.module.css";
 
 
 export default function Login() {
@@ -58,25 +59,31 @@ const handleResetPassword = async () =>{
   }
 };
   return (
-    <div>
+    <div className={styles.containerForm}>
       {error && <Alert message={error}/>}
+      <h1 className={styles.titulo}>LOGIN</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor='email'>Email</label>
-        <input type='email' name='email' placeholder='youremail@company.ltd'
-        onChange={handleChange}
-        />
+        <div className={styles.itemForm}>
+            <label htmlFor='email'>Email</label>
+            <input type='email' name='email' placeholder='youremail@company.ltd'
+            onChange={handleChange}
+            />
+        </div>
 
-        <label htmlFor='password'>Password</label>
-        <input type='password' name='password' id='password'
-        onChange={handleChange}
-        />
-        <button>Login</button>
+        <div className={styles.itemForm}>
+            <label htmlFor='password'>Password</label>
+            <input type='password' name='password' id='password'
+            onChange={handleChange}
+            />
+        </div>
 
-        <a href='#!' onClick={handleResetPassword}>Forgot Password?</a>
+        <button className={styles.button}>Login</button>
+
+        <a href='#!' onClick={handleResetPassword} className={styles.links}>Forgot Password?</a>
 
       </form>
-      <p>Don't have an Account <Link to='/signup'>Register</Link></p>
-      <button onClick={handleGoogleSignin}>Google Login</button>
+      <p>Don't have an Account <Link to='/signup' className={styles.links}>Register</Link></p>
+      <button onClick={handleGoogleSignin} className={styles.button}>Google Login</button>
   </div>
   );
 }

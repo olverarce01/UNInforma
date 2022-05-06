@@ -1,0 +1,40 @@
+.containerCrearNoticia{
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin: 30px;
+}
+.titulo{
+    text-align: center;
+}
+.divForm{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 5px 0;
+}
+.formulario{
+    padding: 10px 60px;
+    font-size: 25px;
+}
+.userDate{
+    color: white;
+}
+.button{
+    background-color: white;
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+.button:hover{
+    background-color: lightgray;
+}
+.submit{
+    display: flex;
+    justify-content: space-between;
+}
+.selection{
+    font-size: 20px;
+}

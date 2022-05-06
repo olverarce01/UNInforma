@@ -1,0 +1,50 @@
+.navMap{
+  background-color: black;
+  justify-items: center;
+}
+.userName{
+  color: white;
+}
+.containerCount{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.sidebar {
+  color: black;
+  background-color: lightgray;
+  padding: 10px 0;
+  font-family: monospace;
+   
+  text-align: center;
+}
+.divContancts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contactos{
+  background-color: lightgray;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s all;
+}
+.contactos:hover{
+  background-color: white;
+}
+.button{
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.button:hover{
+  background-color: lightgreen;
+}

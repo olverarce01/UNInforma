@@ -1,0 +1,42 @@
+.noticia{
+width: 100hv;
+background-color: black;
+color: white;
+padding: 40px;
+margin: 40px;
+transition: 0.3s all;
+}
+
+.noticia:hover{
+  background-color: lightcoral;
+  cursor: pointer;
+}
+.headerNoticias{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.noticia_titulo{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+.noticia_contenido{
+  font-size: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+.noticia_tipo{
+  background-color: lightslategray;
+  display: inline;
+  font-size: 25px;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
