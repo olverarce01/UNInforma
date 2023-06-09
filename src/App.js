@@ -13,7 +13,7 @@ import { Mark } from './components/Mark';
 
 mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default; // eslint-disable-line
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoib2x2ZXJhcmNlMDEiLCJhIjoiY2wyZGZrbHhvMHluYjNsbGhvZzBib3o1MCJ9.IePyh9Zgtj8wkqHJPG95Dg';
+mapboxgl.accessToken = 'pk.eyJ1Ijoib2x2ZXJhcmNlMDEiLCJhIjoiY2xpcDdscjhhMDNvazNkcjAwY2Zndmp5NSJ9.6Izj7DV7WE1R52FL27qdUQ';
 
 
 function crearPoligono(mapa,nombre,coordenadas,colorRelleno,colorBorde,contenidoHtml,i){
