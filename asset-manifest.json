@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/emergencyuni/static/css/main.9c465743.css",
-    "main.js": "/emergencyuni/static/js/main.e03f866b.js",
-    "static/js/787.d5ae399c.chunk.js": "/emergencyuni/static/js/787.d5ae399c.chunk.js",
-    "index.html": "/emergencyuni/index.html",
-    "main.9c465743.css.map": "/emergencyuni/static/css/main.9c465743.css.map",
-    "main.e03f866b.js.map": "/emergencyuni/static/js/main.e03f866b.js.map",
-    "787.d5ae399c.chunk.js.map": "/emergencyuni/static/js/787.d5ae399c.chunk.js.map"
+    "main.css": "/UNInforma/static/css/main.a27aca04.css",
+    "main.js": "/UNInforma/static/js/main.e3ed3722.js",
+    "static/js/787.d5ae399c.chunk.js": "/UNInforma/static/js/787.d5ae399c.chunk.js",
+    "static/js/mapbox-gl-csp-worker.48a8aeb5.worker.js": "/UNInforma/static/js/mapbox-gl-csp-worker.48a8aeb5.worker.js",
+    "index.html": "/UNInforma/index.html",
+    "main.a27aca04.css.map": "/UNInforma/static/css/main.a27aca04.css.map",
+    "main.e3ed3722.js.map": "/UNInforma/static/js/main.e3ed3722.js.map",
+    "787.d5ae399c.chunk.js.map": "/UNInforma/static/js/787.d5ae399c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c465743.css",
-    "static/js/main.e03f866b.js"
+    "static/css/main.a27aca04.css",
+    "static/js/main.e3ed3722.js"
   ]
 }
