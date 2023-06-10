@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a27aca04.css",
-    "main.js": "/static/js/main.aef80626.js",
-    "static/js/787.d5ae399c.chunk.js": "/static/js/787.d5ae399c.chunk.js",
-    "static/js/mapbox-gl-csp-worker.3bc5dd43.worker.js": "/static/js/mapbox-gl-csp-worker.3bc5dd43.worker.js",
-    "index.html": "/index.html",
-    "main.a27aca04.css.map": "/static/css/main.a27aca04.css.map",
-    "main.aef80626.js.map": "/static/js/main.aef80626.js.map",
-    "787.d5ae399c.chunk.js.map": "/static/js/787.d5ae399c.chunk.js.map"
+    "main.css": "/UNInforma/static/css/main.a27aca04.css",
+    "main.js": "/UNInforma/static/js/main.e3ed3722.js",
+    "static/js/787.d5ae399c.chunk.js": "/UNInforma/static/js/787.d5ae399c.chunk.js",
+    "static/js/mapbox-gl-csp-worker.48a8aeb5.worker.js": "/UNInforma/static/js/mapbox-gl-csp-worker.48a8aeb5.worker.js",
+    "index.html": "/UNInforma/index.html",
+    "main.a27aca04.css.map": "/UNInforma/static/css/main.a27aca04.css.map",
+    "main.e3ed3722.js.map": "/UNInforma/static/js/main.e3ed3722.js.map",
+    "787.d5ae399c.chunk.js.map": "/UNInforma/static/js/787.d5ae399c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a27aca04.css",
-    "static/js/main.aef80626.js"
+    "static/js/main.e3ed3722.js"
   ]
 }
